@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+		<script src="https://www.amcharts.com/lib/3/serial.js"></script>
+		<script src="https://www.amcharts.com/lib/3/themes/chalk.js"></script>
+		<script src="https://www.amcharts.com/lib/3/gauge.js"></script>
+		<script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+		<script src="js/chart.js"></script>
+		<script type="text/javascript">
+			timeChart();
+		</script>
+	</head>
+	<body>	
+		<div class="menu"  >
+			<button type="button" class="btn btn-primary" style="margin-left: auto; margin-right: auto;" onclick="timeChart()">Time Chart</button>
+			<button type="button" class="btn btn-primary" style="margin-left: auto; margin-right: auto;" onclick="optionsPie()">Options Pie</button>
+		</div>
+		
+		<div id="chartdiv"  ></div>	
+		
+		<div id="footer" >
+			<h5 style="color:white;">© Copyright Vlad Airinei </h5>
+		</div>
+	</body>
+</html>  
