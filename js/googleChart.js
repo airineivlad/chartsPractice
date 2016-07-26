@@ -32,7 +32,7 @@ function drawChart1(response) {
 		},
 
 		chartArea:{
-     		backgroundColor: 'rgb(108, 103, 103'
+     		backgroundColor: 'rgb(108, 103, 103)'
  		},
 
  		vAxis: {
@@ -70,3 +70,42 @@ function drawChart1(response) {
 	chart.draw(data, google.charts.Bar.convertOptions(options));
 }
 
+
+function drawChartDonut() {
+
+	var data = google.visualization.arrayToDataTable([
+		['Donut', 'Total' ],
+		['Item 1', 300],
+		['Item 2', 700 ]
+		]);
+
+	var options = {
+		title: 'Donut Chart from Google Charts',
+		pieHole: 0.5,
+		colors: ['#4BB2E0', '#80D5FB'],
+
+
+   		legend: { 
+   			textStyle: {
+ 				color: '#FFF', 
+ 			}
+ 		},
+
+   		titleTextStyle: { color: '#FFF' },
+
+   		backgroundColor: 'rgb(108, 103, 103)',
+ 		width:400,
+        height:400,
+        left:'auto',
+        top:-15,
+        right:'auto'
+	};
+
+	var chart = new google.visualization.PieChart(document.getElementById('chartdiv'));
+	
+	chart.draw(data, google.charts.Bar.convertOptions(options));
+}
+
+
+
+ 

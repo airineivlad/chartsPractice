@@ -19,18 +19,20 @@
 
 			timeChart();
 
-
+			      
+       		google.charts.setOnLoadCallback(drawChartDonut);
 			google.charts.setOnLoadCallback(drawChart1);
-			google.charts.load('current', {'packages':['bar']});
+			google.charts.load('current', {'packages':['bar','corechart']});  
 
 		</script>
 
 	</head>
 	<body>	
 		<div class="menu"  >
-			<button type="button" class="btn btn-primary" style="margin-left: auto; margin-right: auto;" onclick="timeChart()">Time Chart</button>
-			<button type="button" class="btn btn-primary" style="margin-left: auto; margin-right: auto;" onclick="optionsPie()">Options Pie</button>
-			<button type="button" class="btn btn-primary" style="margin-left: auto; margin-right: auto;" onclick="barChart()">BarChart</button>
+			<button type="button" class="btn btn-primary" style="margin-left: 10px; margin-right: 10px;" onclick="timeChart()">Time Chart</button>
+			<button type="button" class="btn btn-primary" style="margin-left: 10px; margin-right: 10px;" onclick="optionsPie()">Options Pie</button>
+			<button type="button" class="btn btn-primary" style="margin-left: 10px; margin-right: 10px;" onclick="barChart()">BarChart</button>
+			<button type="button" class="btn btn-primary" style="margin-left: 10px; margin-right: 10px;" onclick="drawChartDonut()">DonutChart</button>
 		</div>
 		
 		<div id="chartdiv"  ></div>	
