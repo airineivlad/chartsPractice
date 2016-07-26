@@ -51,11 +51,6 @@ function timeChart(){
 			"verticalPadding": 10
 		},
 		"valueAxes": [{
-			"duration": "mm",
-			"durationUnits": {
-				"hh": "h ",
-				"mm": "min"
-			},
 			"axisAlpha": 0
 		}],
 		"graphs": [{
@@ -110,7 +105,7 @@ function timeChart(){
 function optionsPie(){
 	var gaugeChart = AmCharts.makeChart("chartdiv", {
 	  "type": "gauge",
-	  "theme": "light",
+	  "theme": "dark",
 	  "axes": [{
 		"axisAlpha": 0,
 		"tickAlpha": 0,

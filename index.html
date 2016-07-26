@@ -11,15 +11,26 @@
 		<script src="https://www.amcharts.com/lib/3/themes/chalk.js"></script>
 		<script src="https://www.amcharts.com/lib/3/gauge.js"></script>
 		<script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 		<script src="js/chart.js"></script>
+		<script src="js/googleChart.js"></script>
+
 		<script type="text/javascript">
+
 			timeChart();
+
+
+			google.charts.setOnLoadCallback(drawChart1);
+			google.charts.load('current', {'packages':['bar']});
+
 		</script>
+
 	</head>
 	<body>	
 		<div class="menu"  >
 			<button type="button" class="btn btn-primary" style="margin-left: auto; margin-right: auto;" onclick="timeChart()">Time Chart</button>
 			<button type="button" class="btn btn-primary" style="margin-left: auto; margin-right: auto;" onclick="optionsPie()">Options Pie</button>
+			<button type="button" class="btn btn-primary" style="margin-left: auto; margin-right: auto;" onclick="barChart()">BarChart</button>
 		</div>
 		
 		<div id="chartdiv"  ></div>	
